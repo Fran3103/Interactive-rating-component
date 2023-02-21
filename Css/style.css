@@ -33,8 +33,9 @@ body {
   justify-content: center;
   background-color: hsl(216deg, 12%, 8%);
 }
-body .container {
+body .container, body .container-thanks {
   width: 330px;
+  height: 360px;
   background-color: hsl(213deg, 19%, 18%);
   display: flex;
   justify-content: flex-start;
@@ -45,7 +46,7 @@ body .container {
   overflow: hidden;
   margin-bottom: 30px;
 }
-body .container .star {
+body .container .star, body .container-thanks .star {
   background-color: hsl(215deg, 21%, 22%);
   width: 40px;
   height: 40px;
@@ -55,14 +56,14 @@ body .container .star {
   align-items: center;
   margin: 10px 0;
 }
-body .container .container-rate {
+body .container .container-rate, body .container-thanks .container-rate {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 20px 0;
 }
-body .container .container-rate .rate {
+body .container .container-rate button, body .container-thanks .container-rate button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,14 +72,16 @@ body .container .container-rate .rate {
   border-radius: 50%;
   height: 40px;
 }
-body .container .container-rate .rate:hover {
+body .container .container-rate button:hover, body .container-thanks .container-rate button:hover {
   background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-body .container .container-rate .rate:hover h2 {
+body .container .container-rate button:focus, body .container-thanks .container-rate button:focus {
+  background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
 }
-body .container a {
+body .container button, body .container-thanks button {
   width: 100%;
   height: 40px;
   border-radius: 25px;
@@ -93,24 +96,18 @@ body .container a {
   text-decoration: none;
   color: hsl(0deg, 0%, 100%);
   font-size: 0.9em;
+  border: none;
 }
-body .container a:hover {
+body .container button:hover, body .container-thanks button:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   cursor: pointer;
 }
 body .container-thanks {
-  width: 330px;
-  height: 337.56px;
-  background-color: hsl(213deg, 19%, 18%);
-  display: flex;
+  display: none;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 40px;
 }
 body .container-thanks .img-thanks {
   align-self: center;
@@ -133,6 +130,7 @@ body .container-thanks .rate-selection p {
   font-size: 0.6em;
   text-align: center;
   color: hsl(25deg, 97%, 53%);
+  padding-top: 2px;
 }
 body .container-thanks .txt-thanks {
   text-align: center;
@@ -141,4 +139,58 @@ body .container-thanks .txt-thanks {
 }
 body .container-thanks .txt-thanks p {
   width: 100%;
+}
+body footer .attribution {
+  font-size: 13px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+body footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    margin: 30px 0 10px;
+  }
+  p {
+    font-size: 1em;
+    margin: 20px 0;
+  }
+  body .container, body .container-thanks {
+    width: 420px;
+    height: 420px;
+  }
+  body .container .star, body .container-thanks .star {
+    height: 60px;
+  }
+  body .container .star img, body .container-thanks .star img {
+    width: 15px;
+  }
+  body .container .container-rate button, body .container-thanks .container-rate button {
+    width: 50px;
+    height: 50px;
+  }
+  body .container button, body .container-thanks button {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  body .container-thanks .img-thanks img {
+    width: 130px;
+    height: 90px;
+    margin-bottom: 30px;
+  }
+  body .container-thanks .rate-selection {
+    width: 240px;
+    height: 30px;
+  }
+  body .container-thanks .rate-selection p {
+    font-size: 0.9em;
+    padding-top: 4px;
+  }
+  body .container-thanks .txt-thanks {
+    margin-top: -5px;
+  }
 }/*# sourceMappingURL=style.css.map */

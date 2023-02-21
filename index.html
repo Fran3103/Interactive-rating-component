@@ -11,15 +11,12 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
   <!-- Rating state start -->
-
+<section>
   <div class="container">
     <div class="star"> <img src="/images/icon-star.svg" alt="star"></div>
     <div class="txt">
@@ -28,36 +25,59 @@
 
       <div class="container-rate">
         <div class="rate">
-          <h2>1</h2></div>
+          <button>1</button></div>
 
         <div class="rate"> 
-          <h2>2</h2></div>
+          <button>2</button></div>
 
         <div class="rate">
-          <h2>3</h2></div>
+          <button>3</button></div>
 
         <div class="rate">
-          <h2>4</h2></div>
+          <button>4</button></div>
 
         <div class="rate"> 
-          <h2>5</h2></div>
+          <button>5</button></div>
 
       </div>
  
-      <a href="select.html">SUBMIT</a> 
+      <button class="btn">SUBMIT</button> 
   </div>
-  
+</section>
 
+<section>
+
+
+  <div class="container-thanks">
+    <div class="img-thanks">
+        <img src="/images/illustration-thank-you.svg" alt="thanks">
+    </div>
+    <div class="rate-selection">
+        <p>You selected <span class="selected"> 3  </span> out of 5</p>
+    </div>
+    <div class="txt-thanks">
+
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+    </div>
+    
+</div>
+
+
+</section>
 
 
   <!-- Rating state end -->
 
 
 
-  
+  <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/franco-aguirre-24855012a" target="_blank">Franco Aguirre</a>.
   </div>
+</footer>
+  <script src="/main.js"></script>
 </body>
 </html>
